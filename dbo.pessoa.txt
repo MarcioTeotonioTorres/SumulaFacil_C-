@@ -1,0 +1,12 @@
+﻿CREATE TABLE [dbo].[pessoa] (
+    [Id]                INT          NOT NULL,
+    [nome]              VARCHAR (60) NOT NULL,
+    [cpf]               VARCHAR (14) NOT NULL,
+    [cep]               VARCHAR (11) NOT NULL,
+    [numeroResidencial] VARCHAR (8)  NOT NULL,
+    [idade] VARCHAR(3) NOT NULL, 
+    UNIQUE NONCLUSTERED ([nome] ASC),
+    UNIQUE NONCLUSTERED ([cpf] ASC),
+    CONSTRAINT [pk_pessoa] PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
